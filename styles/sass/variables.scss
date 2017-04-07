@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+$theme-color: #32373C;
+$dark-color: #2D2E33;
+$accent-color: Yellowgreen;
+$default-font: 'OpenSans';
+$light-font: 'OpenSans-Light';
+$bold-font: 'OpenSans-Bold';

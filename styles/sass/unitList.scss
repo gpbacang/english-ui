@@ -1,0 +1,107 @@
+@import "variables";
+
+#unit-list {
+  // padding: 50px;
+  // box-sizing: border-box;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-wrap: wrap;
+
+  & > div:first-child {
+    width: 100%;
+    height: 100px;
+    font-family: $default-font;
+    color: lighten(black, 40%);
+    font-size: 50px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > div:last-child {
+    width: 100%;
+    height: 967px;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    & > div {
+      width: 100%;
+      height: 150px;
+      box-shadow: 4px 1px 10px gainsboro;
+      background-color: white;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      justify-content: space-between;
+
+      & > div {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+
+        & > div {
+          font-family: $default-font;
+          color: $accent-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:first-child {
+            width: 200px;
+            height: 80%;
+            font-size: 35px;
+            border-right: 1px solid gainsboro;
+            color: lighten(black, 70%);
+          }
+
+          &:last-child {
+            font-size: 45px;
+            padding-left: 50px;
+            letter-spacing: 2px;
+          }
+        }
+      }
+
+      i {
+        font-size: 70px;
+        color: lighten(black, 70%);
+        // color: $accent-color;
+      }
+    }
+  }
+
+  // & > div {
+  //   width: 280px;
+  //   height: 400px;
+  //   margin-left: 20px;
+  //   margin-right: 20px;
+  //   background-color: white;
+  //   box-sizing: border-box;
+  //   box-shadow: 4px 1px 10px gainsboro;
+  //
+  //   & > div {
+  //     color: $accent-color;
+  //     font-family: $default-font;
+  //     padding: 20px;
+  //     font-size: 30px;
+  //
+  //   }
+  // }
+}
