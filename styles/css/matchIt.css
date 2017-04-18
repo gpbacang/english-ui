@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+#match-it > div {
+  width: 100%;
+  height: 100%; }
+  #match-it > div > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    font-family: "OpenSans";
+    color: Yellowgreen;
+    opacity: 0; }
+    #match-it > div > div.show {
+      opacity: 1; }
+  #match-it > div > div:first-child > div:first-child {
+    font-size: 250px;
+    font-weight: 600;
+    padding-left: 100px;
+    box-sizing: border-box; }
+  #match-it > div > div:first-child > div:last-child {
+    font-size: 50px;
+    font-weight: 100;
+    padding-left: 200px;
+    padding-right: 200px;
+    box-sizing: border-box;
+    margin-top: 150px;
+    text-align: center; }
+  #match-it > div > div:last-child > .question {
+    font-size: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px; }
+  #match-it > div > div:last-child > .options {
+    width: 100%;
+    height: 700px;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    #match-it > div > div:last-child > .options > div {
+      width: 450px;
+      height: 200px;
+      margin-left: 20px;
+      margin-right: 20px;
+      box-shadow: 4px 1px 10px gainsboro;
+      box-sizing: border-box;
+      background-color: rgba(154, 205, 50, 0.6);
+      transition: all .5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      color: white; }
+      #match-it > div > div:last-child > .options > div:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22);
+        background-color: Yellowgreen;
+        color: white; }
+  #match-it > div > img {
+    width: 800px;
+    height: 800px;
+    opacity: 0.3;
+    position: absolute;
+    top: 3%;
+    right: 3%; }
+
+/*# sourceMappingURL=matchIt.css.map */

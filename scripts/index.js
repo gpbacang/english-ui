@@ -1,9 +1,10 @@
 $(document).ready(function() {
   // showTitle();
   // unitList();
-  setTimeout(function() {
-    unitList();
-  }, 5000);
+  // showIntro();
+  // setTimeout(function() {
+  //   unitList();
+  // }, 5000);
 });
 
 function showTitle() {
@@ -23,4 +24,8 @@ function unitList() {
       clearInterval(delay);
     }
   }, 100);
+}
+
+function showIntro() {
+  $('#introduction > div').addClass('active');
 }
