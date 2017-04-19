@@ -29,3 +29,9 @@ function unitList() {
 function showIntro() {
   $('#introduction > div').addClass('active');
 }
+
+function setResult(result) {
+  $(".unit-name").text(result[0]);
+  $("#percent-label").text(result[1]);
+  $(".bar").width( result[1] + '%' );
+}

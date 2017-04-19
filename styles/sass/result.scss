@@ -1,0 +1,139 @@
+@import "variables";
+
+#result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#percent-label{
+  margin: 20px;
+  color: yellowgreen;
+  font-size: 100px;
+
+  &:after{
+    content: "%";
+  }
+}
+
+.percent-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unit-name{
+  font-size: 150px;
+  margin: 0;
+  color: yellowgreen;
+  font-family: $bold-font;
+  position: relative;
+}
+
+.button-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  & > button{
+    height: 200px;
+    width: 400px;
+    color: darken(yellowgreen, 25%);
+    background-color: yellowgreen;
+    font-size: 50px;
+    font-family: $bold-font;
+    border: solid 6px darken($dark-color, 5%);
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: none;
+
+    &:not(.negative){
+      background: rgba(153,205,50,1);
+      background: -moz-linear-gradient(top, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,205,50,1)), color-stop(51%, rgba(129,176,26,1)), color-stop(100%, rgba(99,133,19,1)));
+      background: -webkit-linear-gradient(top, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      background: -o-linear-gradient(top, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      background: -ms-linear-gradient(top, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      background: linear-gradient(to bottom, rgba(153,205,50,1) 0%, rgba(129,176,26,1) 51%, rgba(99,133,19,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cd32', endColorstr='#638513', GradientType=0 );
+
+      &:active{
+        color: darken(yellowgreen, 30%);
+
+        background: rgba(98,128,17,1);
+        background: -moz-linear-gradient(top, rgba(98,128,17,1) 0%, rgba(105,143,17,1) 51%, rgba(131,176,42,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(98,128,17,1)), color-stop(51%, rgba(105,143,17,1)), color-stop(100%, rgba(131,176,42,1)));
+        background: -webkit-linear-gradient(top, rgba(98,128,17,1) 0%, rgba(105,143,17,1) 51%, rgba(131,176,42,1) 100%);
+        background: -o-linear-gradient(top, rgba(98,128,17,1) 0%, rgba(105,143,17,1) 51%, rgba(131,176,42,1) 100%);
+        background: -ms-linear-gradient(top, rgba(98,128,17,1) 0%, rgba(105,143,17,1) 51%, rgba(131,176,42,1) 100%);
+        background: linear-gradient(to bottom, rgba(98,128,17,1) 0%, rgba(105,143,17,1) 51%, rgba(131,176,42,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#628011', endColorstr='#83b02a', GradientType=0 );
+      }
+    }
+
+    &.negative{
+      color: yellowgreen;
+      background-color: $theme-color;
+      border: solid 6px yellowgreen;
+    }
+  }
+}
+
+.progress-bar{
+  padding: 10px;
+  height: 100px;
+  width: 1280px;
+  background-color: darken($dark-color, 5%);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  & > .bar{
+    height: 100%;
+    width: 0px;
+    background-color: yellowgreen;
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+
+    -webkit-transition: width .6s ease-in;
+            transition: width .6s ease-in;
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, .2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, .2) 50%,
+        rgba(255, 255, 255, .2) 75%,
+        transparent 75%,
+        transparent
+      );
+      z-index: 1;
+      background-size: 100px 100px;
+      -webkit-animation: move 2s linear infinite;
+      animation: move 2s linear infinite;
+      overflow: hidden;
+    }
+  }
+}
+
+
+@-webkit-keyframes move {
+  from{ background-position: 0 0; }
+  to{ background-position: 100px 100px; }
+}
+
+@keyframes move {
+  from{ background-position: 0 0; }
+  to{ background-position: 100px 100px; }
+}

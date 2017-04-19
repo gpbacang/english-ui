@@ -1,0 +1,41 @@
+@import "variables";
+
+#alert {
+  position: absolute;
+  // background-color: rgba(0,0,0,0.5);
+  width: 500px;
+  height: 130px;
+  // background-color: yellowgreen;
+  background-color: $dark-color;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22);
+  // box-shadow: 4px 1px 10px gainsboro;
+  // float: right;
+  right: -10%;
+  top: 3%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all .3s;
+
+  &.show {
+    opacity: 1;
+    right: 3%;
+  }
+
+  & > img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+  }
+
+  & > div {
+    color: Yellowgreen;
+    font-family: $default-font;
+    font-size: 50px;
+    margin-left: 30px;
+  }
+}

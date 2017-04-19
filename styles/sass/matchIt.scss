@@ -1,112 +1,159 @@
 @import "variables";
 
-
 #match-it {
+  & > img {
+    width: 800px;
+    height: 800px;
+    opacity: 0.3;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+  }
+
   & > div {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    font-family: $default-font;
+    color: Yellowgreen;
+    // opacity: 0;
 
-
-    & > div {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      // align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      position: absolute;
-      font-family: $default-font;
-      color: Yellowgreen;
-      opacity: 0;
-
-      &.show{
-        opacity: 1;
-      }
+    & > div:first-child {
+      font-size: 250px;
+      font-weight: 600;
+      padding-left: 100px;
+      box-sizing: border-box;
     }
 
-    & > div:first-child{
-      & > div:first-child {
-        // color: Yellowgreen;
-        font-size: 250px;
-        // font-family: $default-font;
-        font-weight: 600;
-        padding-left: 100px;
-        box-sizing: border-box;
-      }
-
-      & > div:last-child {
-        // color: Yellowgreen;
-        font-size: 50px;
-        // font-family: $default-font;
-        font-weight: 100;
-        padding-left: 200px;
-        padding-right: 200px;
-        box-sizing: border-box;
-        margin-top: 150px;
-        text-align: center;
-      }
+    & > div:last-child {
+      font-size: 50px;
+      font-weight: 100;
+      padding-left: 200px;
+      padding-right: 200px;
+      box-sizing: border-box;
+      margin-top: 150px;
+      text-align: center;
     }
 
-    & > div:last-child{
-      & > .question {
-        font-size: 80px;
-        padding-left: 50px;
-        padding-right: 50px;
-        text-align: center;
-        font-weight: 600;
-        margin-bottom: 50px;
-      }
-
-      & > .options {
-        width: 100%;
-        height: 700px;
-        padding: 50px;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        // justify-content: center;
-        flex-wrap: wrap;
-
-        & > div {
-          width: 450px;
-          height: 200px;
-          margin-left: 20px;
-          margin-right: 20px;
-          // border: 5px solid yellowgreen;
-          // box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-          box-shadow: 4px 1px 10px gainsboro;
-          box-sizing: border-box;
-          // background-color: lighten(Yellowgreen, 30%);
-          background-color: rgba(154, 205, 50, 0.6);
-          transition: all .5s;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 50px;
-          // color: darken(Yellowgreen, 10%);
-          color: white;
-
-          &:hover{
-            // width: 93%;
-            // height: 200px;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22);
-            background-color: Yellowgreen;
-            color: white;
-            // border: none;
-          }
-        }
-      }
-    }
-
-    & > img {
-      width: 800px;
-      height: 800px;
-      opacity: 0.3;
-      position: absolute;
-      top: 3%;
-      right: 3%;
-      // left: 5%;
-    }
+        // & > div:first-child{
+        //   & > div:first-child {
+        //     font-size: 250px;
+        //     font-weight: 600;
+        //     padding-left: 100px;
+        //     box-sizing: border-box;
+        //   }
+        //
+        //   & > div:last-child {
+        //     font-size: 50px;
+        //     font-weight: 100;
+        //     padding-left: 200px;
+        //     padding-right: 200px;
+        //     box-sizing: border-box;
+        //     margin-top: 150px;
+        //     text-align: center;
+        //   }
+        // }
   }
 
 }
+
+
+// #match-it {
+//   & > div {
+//     width: 100%;
+//     height: 100%;
+//
+//
+//     & > div {
+//       width: 100%;
+//       height: 100%;
+//       display: flex;
+//       justify-content: center;
+//       flex-direction: column;
+//       position: absolute;
+//       font-family: $default-font;
+//       color: Yellowgreen;
+//       opacity: 0;
+//
+//       &.show{
+//         opacity: 1;
+//       }
+//     }
+//
+//     & > div:first-child{
+//       & > div:first-child {
+//         font-size: 250px;
+//         font-weight: 600;
+//         padding-left: 100px;
+//         box-sizing: border-box;
+//       }
+//
+//       & > div:last-child {
+//         font-size: 50px;
+//         font-weight: 100;
+//         padding-left: 200px;
+//         padding-right: 200px;
+//         box-sizing: border-box;
+//         margin-top: 150px;
+//         text-align: center;
+//       }
+//     }
+//
+//     & > div:last-child{
+//       & > .question {
+//         font-size: 80px;
+//         padding-left: 50px;
+//         padding-right: 50px;
+//         text-align: center;
+//         font-weight: 600;
+//         margin-bottom: 50px;
+//       }
+//
+//       & > .options {
+//         width: 100%;
+//         height: 700px;
+//         padding: 50px;
+//         box-sizing: border-box;
+//         display: flex;
+//         align-items: center;
+//         // justify-content: center;
+//         flex-wrap: wrap;
+//
+//         & > div {
+//           width: 450px;
+//           height: 200px;
+//           margin-left: 20px;
+//           margin-right: 20px;
+//           box-shadow: 4px 1px 10px gainsboro;
+//           box-sizing: border-box;
+//           background-color: rgba(154, 205, 50, 0.6);
+//           transition: all .5s;
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           font-size: 50px;
+//           color: white;
+//
+//           &:hover{
+//             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22);
+//             background-color: Yellowgreen;
+//             color: white;
+//           }
+//         }
+//       }
+//     }
+//
+//     & > img {
+//       width: 800px;
+//       height: 800px;
+//       opacity: 0.3;
+//       position: absolute;
+//       top: 3%;
+//       right: 3%;
+//     }
+//   }
+//
+// }

@@ -7,14 +7,14 @@
 @font-face {
   font-family: 'OpenSans-Bold';
   src: url(../fonts/OpenSans-Bold.ttf); }
-#match-it > img {
+#put-it-together > img {
   width: 800px;
   height: 800px;
-  opacity: 0.3;
+  opacity: 0.2;
   position: absolute;
   top: 3%;
   right: 3%; }
-#match-it > div {
+#put-it-together > div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -23,18 +23,18 @@
   position: absolute;
   font-family: "OpenSans";
   color: Yellowgreen; }
-  #match-it > div > div:first-child {
-    font-size: 250px;
+  #put-it-together > div > div:first-child {
+    font-size: 170px;
     font-weight: 600;
     padding-left: 100px;
     box-sizing: border-box; }
-  #match-it > div > div:last-child {
+  #put-it-together > div > div:last-child {
     font-size: 50px;
     font-weight: 100;
     padding-left: 200px;
     padding-right: 200px;
     box-sizing: border-box;
-    margin-top: 150px;
+    margin-top: 200px;
     text-align: center; }
 
-/*# sourceMappingURL=matchIt.css.map */
+/*# sourceMappingURL=putIttogether.css.map */

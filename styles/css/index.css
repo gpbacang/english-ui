@@ -124,27 +124,28 @@
 @font-face {
   font-family: 'OpenSans-Bold';
   src: url(../fonts/OpenSans-Bold.ttf); }
+#match-it > img {
+  width: 800px;
+  height: 800px;
+  opacity: 0.3;
+  position: absolute;
+  top: 3%;
+  right: 3%; }
 #match-it > div {
   width: 100%;
-  height: 100%; }
-  #match-it > div > div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    font-family: "OpenSans";
-    color: Yellowgreen;
-    opacity: 0; }
-    #match-it > div > div.show {
-      opacity: 1; }
-  #match-it > div > div:first-child > div:first-child {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  font-family: "OpenSans";
+  color: Yellowgreen; }
+  #match-it > div > div:first-child {
     font-size: 250px;
     font-weight: 600;
     padding-left: 100px;
     box-sizing: border-box; }
-  #match-it > div > div:first-child > div:last-child {
+  #match-it > div > div:last-child {
     font-size: 50px;
     font-weight: 100;
     padding-left: 200px;
@@ -152,46 +153,306 @@
     box-sizing: border-box;
     margin-top: 150px;
     text-align: center; }
-  #match-it > div > div:last-child > .question {
-    font-size: 80px;
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+#fill-it > img {
+  width: 900px;
+  height: 900px;
+  opacity: 0.2;
+  position: absolute;
+  top: 3%;
+  right: 5%; }
+#fill-it > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  font-family: "OpenSans";
+  color: Yellowgreen; }
+  #fill-it > div > div:first-child {
+    font-size: 250px;
+    font-weight: 600;
+    padding-left: 100px;
+    box-sizing: border-box; }
+  #fill-it > div > div:last-child {
+    font-size: 50px;
+    font-weight: 100;
+    padding-left: 200px;
+    padding-right: 200px;
+    box-sizing: border-box;
+    margin-top: 150px;
+    text-align: center; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+#put-it-together > img {
+  width: 800px;
+  height: 800px;
+  opacity: 0.2;
+  position: absolute;
+  top: 3%;
+  right: 3%; }
+#put-it-together > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  font-family: "OpenSans";
+  color: Yellowgreen; }
+  #put-it-together > div > div:first-child {
+    font-size: 170px;
+    font-weight: 600;
+    padding-left: 100px;
+    box-sizing: border-box; }
+  #put-it-together > div > div:last-child {
+    font-size: 50px;
+    font-weight: 100;
+    padding-left: 200px;
+    padding-right: 200px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    text-align: center; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+#question-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  #question-page > .question {
+    font-size: 100px;
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
-    font-weight: 600;
-    margin-bottom: 50px; }
-  #match-it > div > div:last-child > .options {
+    font-weight: bolder;
+    margin-bottom: 50px;
+    font-family: "OpenSans";
+    color: Yellowgreen; }
+  #question-page > .options {
     width: 100%;
     height: 700px;
     padding: 50px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap; }
-    #match-it > div > div:last-child > .options > div {
-      width: 450px;
+    #question-page > .options > button {
       height: 200px;
+      width: 400px;
+      color: #4d6719;
+      background-color: yellowgreen;
+      font-size: 50px;
+      font-family: "OpenSans-Bold";
+      border: solid 6px #212225;
+      border-radius: 20px;
+      box-sizing: border-box;
       margin-left: 20px;
       margin-right: 20px;
-      box-shadow: 4px 1px 10px gainsboro;
-      box-sizing: border-box;
-      background-color: rgba(154, 205, 50, 0.6);
-      transition: all .5s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 50px;
-      color: white; }
-      #match-it > div > div:last-child > .options > div:hover {
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22);
-        background-color: Yellowgreen;
-        color: white; }
-  #match-it > div > img {
-    width: 800px;
-    height: 800px;
-    opacity: 0.3;
-    position: absolute;
-    top: 3%;
+      outline: none; }
+      #question-page > .options > button:not(.negative) {
+        background: #99cd32;
+        background: -moz-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, #99cd32), color-stop(51%, #81b01a), color-stop(100%, #638513));
+        background: -webkit-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+        background: -o-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+        background: -ms-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+        background: linear-gradient(to bottom, #99cd32 0%, #81b01a 51%, #638513 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cd32', endColorstr='#638513', GradientType=0 ); }
+        #question-page > .options > button:not(.negative):active {
+          color: #3e5214;
+          background: #628011;
+          background: -moz-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, #628011), color-stop(51%, #698f11), color-stop(100%, #83b02a));
+          background: -webkit-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+          background: -o-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+          background: -ms-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+          background: linear-gradient(to bottom, #628011 0%, #698f11 51%, #83b02a 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#628011', endColorstr='#83b02a', GradientType=0 ); }
+      #question-page > .options > button.negative {
+        color: yellowgreen;
+        background-color: #32373C;
+        border: solid 6px yellowgreen; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+#percent-label {
+  margin: 20px;
+  color: yellowgreen;
+  font-size: 100px; }
+  #percent-label:after {
+    content: "%"; }
+
+.percent-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.unit-name {
+  font-size: 150px;
+  margin: 0;
+  color: yellowgreen;
+  font-family: "OpenSans-Bold";
+  position: relative; }
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  .button-wrapper > button {
+    height: 200px;
+    width: 400px;
+    color: #4d6719;
+    background-color: yellowgreen;
+    font-size: 50px;
+    font-family: "OpenSans-Bold";
+    border: solid 6px #212225;
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: none; }
+    .button-wrapper > button:not(.negative) {
+      background: #99cd32;
+      background: -moz-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, #99cd32), color-stop(51%, #81b01a), color-stop(100%, #638513));
+      background: -webkit-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+      background: -o-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+      background: -ms-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+      background: linear-gradient(to bottom, #99cd32 0%, #81b01a 51%, #638513 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cd32', endColorstr='#638513', GradientType=0 ); }
+      .button-wrapper > button:not(.negative):active {
+        color: #3e5214;
+        background: #628011;
+        background: -moz-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, #628011), color-stop(51%, #698f11), color-stop(100%, #83b02a));
+        background: -webkit-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+        background: -o-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+        background: -ms-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+        background: linear-gradient(to bottom, #628011 0%, #698f11 51%, #83b02a 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#628011', endColorstr='#83b02a', GradientType=0 ); }
+    .button-wrapper > button.negative {
+      color: yellowgreen;
+      background-color: #32373C;
+      border: solid 6px yellowgreen; }
+
+.progress-bar {
+  padding: 10px;
+  height: 100px;
+  width: 1280px;
+  background-color: #212225;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box; }
+  .progress-bar > .bar {
+    height: 100%;
+    width: 0px;
+    background-color: yellowgreen;
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: width .6s ease-in;
+    transition: width .6s ease-in; }
+    .progress-bar > .bar:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+      z-index: 1;
+      background-size: 100px 100px;
+      -webkit-animation: move 2s linear infinite;
+      animation: move 2s linear infinite;
+      overflow: hidden; }
+
+@-webkit-keyframes move {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100px 100px; } }
+@keyframes move {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100px 100px; } }
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+#alert {
+  position: absolute;
+  width: 500px;
+  height: 130px;
+  background-color: #2D2E33;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22);
+  right: -10%;
+  top: 3%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all .3s; }
+  #alert.show {
+    opacity: 1;
     right: 3%; }
+  #alert > img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px; }
+  #alert > div {
+    color: Yellowgreen;
+    font-family: "OpenSans";
+    font-size: 50px;
+    margin-left: 30px; }
 
 * {
   margin: 0;
@@ -206,6 +467,7 @@ body {
   height: 100%;
   background-color: #edf2f5;
   opacity: 0;
+  font-family: "OpenSans";
   position: absolute;
   z-index: -1;
   overflow: hidden; }

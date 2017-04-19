@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+#question-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  #question-page > .question {
+    font-size: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    font-family: "OpenSans";
+    color: Yellowgreen; }
+  #question-page > .options {
+    width: 100%;
+    height: 700px;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #question-page > .options > button {
+      height: 200px;
+      width: 400px;
+      color: #4d6719;
+      background-color: yellowgreen;
+      font-size: 50px;
+      font-family: "OpenSans-Bold";
+      border: solid 6px #212225;
+      border-radius: 20px;
+      box-sizing: border-box;
+      margin-left: 20px;
+      margin-right: 20px;
+      outline: none; }
+      #question-page > .options > button:not(.negative) {
+        background: #99cd32;
+        background: -moz-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, #99cd32), color-stop(51%, #81b01a), color-stop(100%, #638513));
+        background: -webkit-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+        background: -o-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+        background: -ms-linear-gradient(top, #99cd32 0%, #81b01a 51%, #638513 100%);
+        background: linear-gradient(to bottom, #99cd32 0%, #81b01a 51%, #638513 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cd32', endColorstr='#638513', GradientType=0 ); }
+        #question-page > .options > button:not(.negative):active {
+          color: #3e5214;
+          background: #628011;
+          background: -moz-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, #628011), color-stop(51%, #698f11), color-stop(100%, #83b02a));
+          background: -webkit-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+          background: -o-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+          background: -ms-linear-gradient(top, #628011 0%, #698f11 51%, #83b02a 100%);
+          background: linear-gradient(to bottom, #628011 0%, #698f11 51%, #83b02a 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#628011', endColorstr='#83b02a', GradientType=0 ); }
+      #question-page > .options > button.negative {
+        color: yellowgreen;
+        background-color: #32373C;
+        border: solid 6px yellowgreen; }
+
+/*# sourceMappingURL=question.css.map */
