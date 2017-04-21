@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf); }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.ttf); }
+#step-page {
+  font-family: "OpenSans"; }
+  #step-page > div:first-child {
+    padding: 50px;
+    box-sizing: border-box;
+    color: yellowgreen;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder; }
+  #step-page > div:last-child {
+    width: 3000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 15%;
+    transition: all 1s; }
+    #step-page > div:last-child.step-one {
+      left: 15%; }
+      #step-page > div:last-child.step-one > div:first-child {
+        border: 30px solid yellowgreen;
+        box-sizing: border-box;
+        font-size: 300px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22);
+        opacity: 1; }
+    #step-page > div:last-child.step-two {
+      left: -20%; }
+      #step-page > div:last-child.step-two > div:nth-child(2) {
+        border: 30px solid yellowgreen;
+        box-sizing: border-box;
+        font-size: 300px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22);
+        opacity: 1; }
+    #step-page > div:last-child.step-three {
+      left: -55%; }
+      #step-page > div:last-child.step-three > div:nth-child(3) {
+        border: 30px solid yellowgreen;
+        box-sizing: border-box;
+        font-size: 300px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22);
+        opacity: 1; }
+    #step-page > div:last-child.step-four {
+      left: -90%; }
+      #step-page > div:last-child.step-four > div:last-child {
+        border: 30px solid yellowgreen;
+        box-sizing: border-box;
+        font-size: 300px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22);
+        opacity: 1; }
+    #step-page > div:last-child > div {
+      width: 500px;
+      height: 500px;
+      border-radius: 100%;
+      background-color: #2D2E33;
+      color: yellowgreen;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 300px;
+      font-weight: bolder;
+      border: 30px solid transparent;
+      box-sizing: border-box;
+      box-shadow: 4px 1px 10px gainsboro;
+      margin-top: 150px;
+      margin-left: 50px;
+      margin-right: 50px;
+      transition: all 1s;
+      opacity: 0.5; }
+
+/*# sourceMappingURL=step.css.map */

@@ -35,3 +35,31 @@ function setResult(result) {
   $("#percent-label").text(result[1]);
   $(".bar").width( result[1] + '%' );
 }
+
+function sendMessage(msg) {
+  // var chatName = (sender == 'user')? 'You':'Pepper';
+  $(".chat-wrapper > div:last-child").append(
+    '<div class="pepper chat-container">'+
+      '<div>' + msg + '</div>' +
+    '</div>'
+  );
+
+  setTimeout(function(){
+    $('.chat-container').addClass('show');
+  },20);
+  // $('#chatbox').scrollTop( $('.chat-wrapper').height() );
+}
+
+function sendMessage_user(msg) {
+  // var chatName = (sender == 'user')? 'You':'Pepper';
+  $(".chat-wrapper > div:last-child").append(
+    '<div class="pepper chat-container">'+
+      '<div>' + msg + '</div>' +
+    '</div>'
+  );
+
+  setTimeout(function(){
+    $('.chat-container').addClass('show');
+  },20);
+  // $('#chatbox').scrollTop( $('.chat-wrapper').height() );
+}
